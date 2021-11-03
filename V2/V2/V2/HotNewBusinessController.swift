@@ -8,8 +8,8 @@ class HotNewBusinessController<HLBD: HotNewBusinessDelegate>: BusinessController
     let content: UINavigationController
 
     override init(businessDelegate: HLBD) {
-        let lvc = LoadingViewController.instantiate()
-        content = UINavigationController(rootViewController: lvc)
+        let aivc = ActivityIndicatorViewController()
+        content = UINavigationController(rootViewController: aivc)
         super.init(businessDelegate: businessDelegate)
 
         title = "Hot & New"

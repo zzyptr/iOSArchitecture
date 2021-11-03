@@ -15,8 +15,7 @@
 		5A9884D72728F30D00664F32 /* RepliesViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A9884D62728F30D00664F32 /* RepliesViewController.storyboard */; };
 		5A9884D92728F7DF00664F32 /* HTTPResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9884D82728F7DF00664F32 /* HTTPResponse.swift */; };
 		5A9884DB2729106000664F32 /* TopicBusinessController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9884DA2729106000664F32 /* TopicBusinessController.swift */; };
-		5A9884DD272912DD00664F32 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9884DC272912DD00664F32 /* LoadingViewController.swift */; };
-		5A9884DF272912FF00664F32 /* LoadingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A9884DE272912FF00664F32 /* LoadingViewController.storyboard */; };
+		5A9884DD272912DD00664F32 /* ActivityIndicatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9884DC272912DD00664F32 /* ActivityIndicatorViewController.swift */; };
 		70DABA8B27201206004D1BB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70DABA8A27201206004D1BB7 /* Assets.xcassets */; };
 		70DABA8E27201206004D1BB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70DABA8C27201206004D1BB7 /* LaunchScreen.storyboard */; };
 		70DABA9D27201252004D1BB7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DABA9627201251004D1BB7 /* SceneDelegate.swift */; };
@@ -58,8 +57,7 @@
 		5A9884D62728F30D00664F32 /* RepliesViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RepliesViewController.storyboard; sourceTree = "<group>"; };
 		5A9884D82728F7DF00664F32 /* HTTPResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPResponse.swift; sourceTree = "<group>"; };
 		5A9884DA2729106000664F32 /* TopicBusinessController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicBusinessController.swift; sourceTree = "<group>"; };
-		5A9884DC272912DD00664F32 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
-		5A9884DE272912FF00664F32 /* LoadingViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoadingViewController.storyboard; sourceTree = "<group>"; };
+		5A9884DC272912DD00664F32 /* ActivityIndicatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorViewController.swift; sourceTree = "<group>"; };
 		70DABA7E27201205004D1BB7 /* V2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = V2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70DABA8A27201206004D1BB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		70DABA8D27201206004D1BB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -138,8 +136,7 @@
 				5A9884D62728F30D00664F32 /* RepliesViewController.storyboard */,
 				70DABB1B27231133004D1BB7 /* NodeViewController.swift */,
 				70DABB1D272311A0004D1BB7 /* NodeViewController.storyboard */,
-				5A9884DC272912DD00664F32 /* LoadingViewController.swift */,
-				5A9884DE272912FF00664F32 /* LoadingViewController.storyboard */,
+				5A9884DC272912DD00664F32 /* ActivityIndicatorViewController.swift */,
 				70DABAD92721A1B6004D1BB7 /* API.swift */,
 				70DABA8A27201206004D1BB7 /* Assets.xcassets */,
 				70DABA8C27201206004D1BB7 /* LaunchScreen.storyboard */,
@@ -216,7 +213,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A9884DF272912FF00664F32 /* LoadingViewController.storyboard in Resources */,
 				70DABA8E27201206004D1BB7 /* LaunchScreen.storyboard in Resources */,
 				70DABB2827250664004D1BB7 /* HotNewViewController.storyboard in Resources */,
 				5A7E287E2728042200392EF8 /* FavorsViewController.storyboard in Resources */,
@@ -237,7 +233,7 @@
 				5A9884DB2729106000664F32 /* TopicBusinessController.swift in Sources */,
 				70DABAD22720643D004D1BB7 /* V2EXBusinessController.swift in Sources */,
 				5A7E287A2728010400392EF8 /* FavorsViewController.swift in Sources */,
-				5A9884DD272912DD00664F32 /* LoadingViewController.swift in Sources */,
+				5A9884DD272912DD00664F32 /* ActivityIndicatorViewController.swift in Sources */,
 				5A7E287C2728016200392EF8 /* HotNewBusinessController.swift in Sources */,
 				5A85EC4A2730D22000172792 /* Topic.swift in Sources */,
 				70DABB262725065E004D1BB7 /* HotNewViewController.swift in Sources */,
