@@ -18,9 +18,15 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 extension SceneDelegate: HotNewBusinessDelegate {
 
     func request<T: Decodable>(_ message: HTTPRequest) async throws -> T {
-        /// Mocking
+        /// Mocking topics
         let topics: [Topic] = [.mock, .mock]
         if let t = topics as? T {
+            return t
+        }
+
+        /// Mocking replies
+        let replies: [Reply] = [.mock, .mock]
+        if let t = replies as? T {
             return t
         }
 

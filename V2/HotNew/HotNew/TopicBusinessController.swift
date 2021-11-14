@@ -24,6 +24,9 @@ extension TopicBusinessController: TopicViewControllerDelegate {
 
     func showReplies(topicID: Int) {
         let rvc = RepliesViewController.instantiate(topicID: topicID)
+        rvc.delegate = self
         navigationController?.pushViewController(rvc, animated: true)
     }
 }
+
+extension TopicBusinessController: RepliesViewControllerDelegate {}

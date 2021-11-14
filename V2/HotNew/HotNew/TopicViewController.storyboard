@@ -11,7 +11,7 @@
         <!--Topic View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController storyboardIdentifier="TopicViewController" id="Y6W-OH-hqX" customClass="TopicViewController" customModule="V2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TopicViewController" id="Y6W-OH-hqX" customClass="TopicViewController" customModule="HotNew" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -56,9 +56,9 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Vk-0B-Wrl">
-                                <rect key="frame" x="171.5" y="831" width="71" height="31"/>
+                                <rect key="frame" x="152" y="831" width="110" height="31"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Replies"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Show Replies"/>
                                 <connections>
                                     <action selector="showReplies" destination="Y6W-OH-hqX" eventType="touchUpInside" id="LUm-mP-Jnl"/>
                                 </connections>

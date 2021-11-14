@@ -27,6 +27,7 @@ class RepliesViewController: UITableViewController {
         super.viewDidLoad()
 
         title = "Replies"
+        tableView.rowHeight = UITableView.automaticDimension
         Task(operation: fetchReplies)
     }
 
@@ -34,23 +35,29 @@ class RepliesViewController: UITableViewController {
     func fetchReplies() async {
         guard let delegate = delegate else { return }
         guard let topicID = topicID else { return }
-        do {
-            replies = try await delegate.request(API.replies(topicID: topicID))
+        if let replies: [Reply] = try? await delegate.request(API.replies(topicID: topicID)) {
+            self.replies = replies
             DispatchQueue.main.async {
                 self.tableView.reloadData()
             }
-        } catch {
-
         }
     }
 }
 
-struct Reply: Decodable {
-    let member: Member
-    let created: Int
-    let topic_id: Int
-    let content: String
-    let content_rendered: String
-    let last_modified: Int
-    let id: Int
+extension RepliesViewController {
+
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return replies.count
+    }
+
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeue(RepliesViewCell.self, for: indexPath)
+        cell.contentLabel.text = replies[indexPath.row].content
+        return cell
+    }
+}
+
+class RepliesViewCell: UITableViewCell {
+
+    @IBOutlet weak var contentLabel: UILabel!
 }

@@ -30,6 +30,7 @@
 		5A8DA67A2740D71800A8B427 /* HotNew.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5A8DA6262740D0FE00A8B427 /* HotNew.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5A8DA6812740DB1900A8B427 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8DA6802740DB1900A8B427 /* Node.swift */; };
 		5A8DA6832740DB2A00A8B427 /* Member.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8DA6822740DB2A00A8B427 /* Member.swift */; };
+		5A8DA6882740E0F400A8B427 /* Reply.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8DA6872740E0F400A8B427 /* Reply.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +92,7 @@
 		5A8DA6752740D6C000A8B427 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A8DA6802740DB1900A8B427 /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
 		5A8DA6822740DB2A00A8B427 /* Member.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Member.swift; sourceTree = "<group>"; };
+		5A8DA6872740E0F400A8B427 /* Reply.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reply.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 				5A8DA63C2740D13100A8B427 /* TopicBusinessController.swift */,
 				5A8DA6342740D13100A8B427 /* TopicViewController.swift */,
 				5A8DA63B2740D13100A8B427 /* TopicViewController.storyboard */,
+				5A8DA6872740E0F400A8B427 /* Reply.swift */,
 				5A8DA6302740D13000A8B427 /* RepliesViewController.swift */,
 				5A8DA6312740D13100A8B427 /* RepliesViewController.storyboard */,
 				5A8DA6332740D13100A8B427 /* NodeViewController.swift */,
@@ -301,6 +304,7 @@
 				5A8DA6522740D53500A8B427 /* NodeViewController.swift in Sources */,
 				5A8DA6502740D53400A8B427 /* TopicViewController.swift in Sources */,
 				5A8DA6832740DB2A00A8B427 /* Member.swift in Sources */,
+				5A8DA6882740E0F400A8B427 /* Reply.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
