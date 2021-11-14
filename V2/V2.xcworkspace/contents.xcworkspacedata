@@ -5,6 +5,9 @@
       location = "group:V2/V2.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:HotNew/HotNew.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Infra/Infra.xcodeproj">
    </FileRef>
 </Workspace>

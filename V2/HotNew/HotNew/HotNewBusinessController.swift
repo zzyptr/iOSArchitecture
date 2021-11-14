@@ -1,13 +1,13 @@
 import UIKit
 import Infra
 
-protocol HotNewBusinessDelegate: AnyObject, HTTPClient {}
+public protocol HotNewBusinessDelegate: AnyObject, HTTPClient {}
 
-class HotNewBusinessController<HLBD: HotNewBusinessDelegate>: BusinessController<HLBD> {
+public class HotNewBusinessController<HNBD: HotNewBusinessDelegate>: BusinessController<HNBD> {
 
     let content: UINavigationController
 
-    override init(businessDelegate: HLBD) {
+    public override init(businessDelegate: HNBD) {
         let aivc = ActivityIndicatorViewController()
         content = UINavigationController(rootViewController: aivc)
         super.init(businessDelegate: businessDelegate)
@@ -23,11 +23,13 @@ class HotNewBusinessController<HLBD: HotNewBusinessDelegate>: BusinessController
     @Sendable
     func fetchData() async {
         do {
-            let hot = try await request(API.hotTopics()) as [Topic]
-            let new = try await request(API.newTopics()) as [Topic]
+            async let hot = request(API.hotTopics()) as [Topic]
+            async let new = request(API.newTopics()) as [Topic]
+
+            let tuple = try await (hot, new)
 
             DispatchQueue.main.async {
-                let hnvc = HotNewViewController.instantiate(hot: hot, new: new)
+                let hnvc = HotNewViewController.instantiate(hot: tuple.0, new: tuple.1)
                 hnvc.delegate = self
                 self.content.setViewControllers([hnvc], animated: true)
             }

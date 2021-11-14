@@ -3,7 +3,7 @@ import UIKit
 extension NodeViewController {
 
     static func instantiate(node: Node) -> Self {
-        let sb = UIStoryboard(name: "\(Self.self)", bundle: nil)
+        let sb = UIStoryboard(name: "\(Self.self)", bundle: Bundle(for: Self.self))
         let vc = sb.instantiateViewController(withIdentifier: "\(Self.self)") as! Self
         vc.node = node
         return vc

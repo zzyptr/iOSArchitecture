@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A8DA65B2740D59800A8B427 /* ActivityIndicatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8DA65A2740D59800A8B427 /* ActivityIndicatorViewController.swift */; };
+		5A8DA67F2740D79B00A8B427 /* URLSession+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8DA67E2740D79B00A8B427 /* URLSession+.swift */; };
 		70DABAB1272012A4004D1BB7 /* Infra.h in Headers */ = {isa = PBXBuildFile; fileRef = 70DABAB0272012A4004D1BB7 /* Infra.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		70DABAB8272012E3004D1BB7 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DABAB7272012E3004D1BB7 /* HTTPClient.swift */; };
 		70DABABA272012E8004D1BB7 /* BusinessController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DABAB9272012E8004D1BB7 /* BusinessController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5A8DA65A2740D59800A8B427 /* ActivityIndicatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorViewController.swift; sourceTree = "<group>"; };
+		5A8DA67E2740D79B00A8B427 /* URLSession+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+.swift"; sourceTree = "<group>"; };
 		70DABAAD272012A4004D1BB7 /* Infra.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Infra.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		70DABAB0272012A4004D1BB7 /* Infra.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Infra.h; sourceTree = "<group>"; };
 		70DABAB7272012E3004D1BB7 /* HTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
@@ -56,11 +60,13 @@
 		70DABAAF272012A4004D1BB7 /* Infra */ = {
 			isa = PBXGroup;
 			children = (
+				5A8DA65A2740D59800A8B427 /* ActivityIndicatorViewController.swift */,
 				70DABAB9272012E8004D1BB7 /* BusinessController.swift */,
 				70DABAB7272012E3004D1BB7 /* HTTPClient.swift */,
 				70DABAC827201ABE004D1BB7 /* HTTPRequest.swift */,
 				70DABAC027201350004D1BB7 /* UIViewController+.swift */,
 				70DABB29272513F0004D1BB7 /* UITableView+.swift */,
+				5A8DA67E2740D79B00A8B427 /* URLSession+.swift */,
 				70DABAB0272012A4004D1BB7 /* Infra.h */,
 			);
 			path = Infra;
@@ -155,7 +161,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				70DABAB8272012E3004D1BB7 /* HTTPClient.swift in Sources */,
+				5A8DA65B2740D59800A8B427 /* ActivityIndicatorViewController.swift in Sources */,
 				70DABAC927201ABE004D1BB7 /* HTTPRequest.swift in Sources */,
+				5A8DA67F2740D79B00A8B427 /* URLSession+.swift in Sources */,
 				70DABABA272012E8004D1BB7 /* BusinessController.swift in Sources */,
 				70DABB2A272513F0004D1BB7 /* UITableView+.swift in Sources */,
 				70DABAC127201350004D1BB7 /* UIViewController+.swift in Sources */,

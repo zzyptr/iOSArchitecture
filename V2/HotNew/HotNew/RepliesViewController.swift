@@ -9,7 +9,7 @@ protocol RepliesViewControllerDelegate: AnyObject, HTTPClient {
 extension RepliesViewController {
 
     static func instantiate(topicID: Int) -> Self {
-        let sb = UIStoryboard(name: "\(Self.self)", bundle: nil)
+        let sb = UIStoryboard(name: "\(Self.self)", bundle: Bundle(for: Self.self))
         let vc = sb.instantiateViewController(withIdentifier: "\(Self.self)") as! Self
         vc.topicID = topicID
         return vc

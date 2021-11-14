@@ -1,8 +1,8 @@
 import UIKit
 
-class ActivityIndicatorViewController: UIViewController {
+public class ActivityIndicatorViewController: UIViewController {
 
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
 
         view.backgroundColor = .systemBackground

@@ -1,5 +1,6 @@
 import UIKit
 import Infra
+import HotNew
 
 protocol V2EXBusinessDelegate: AnyObject, HTTPClient {}
 

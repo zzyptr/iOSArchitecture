@@ -9,7 +9,7 @@ extension RootController {
 extension RootController: HTTPClient {
 
     func request<T: Decodable>(_ message: HTTPRequest) async throws -> T {
-        let result = await request(message.toURLRequest())
+        let result = await RootController.urlSession.request(message.toURLRequest())
         switch result {
         case let .success(data):
             do {
@@ -24,19 +24,6 @@ extension RootController: HTTPClient {
         case let .failure(error):
             handle(error)
             throw HTTPResponse.ok
-        }
-    }
-
-    func request(_ message: URLRequest) async -> Result<Data, URLError> {
-        return await withCheckedContinuation { continuation in
-            RootController.urlSession.dataTask(with: message) { data, _, error in
-                if let data = data {
-                    continuation.resume(returning: .success(data))
-                }
-                if let error = error as? URLError {
-                    continuation.resume(returning: .failure(error))
-                }
-            }.resume()
         }
     }
 
