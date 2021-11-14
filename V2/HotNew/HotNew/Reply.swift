@@ -4,8 +4,8 @@ extension Reply {
         member: .mock,
         created: 0,
         topic_id: 0,
-        content: "",
-        content_rendered: "",
+        content: "mock",
+        content_rendered: "mock",
         last_modified: 0,
         id: 0
     )

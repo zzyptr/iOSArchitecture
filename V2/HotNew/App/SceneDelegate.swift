@@ -30,12 +30,6 @@ extension SceneDelegate: HotNewBusinessDelegate {
             return t
         }
 
-        let result = await URLSession.shared.request(message.toURLRequest())
-        switch result {
-        case let .success(data):
-            return try JSONDecoder().decode(T.self, from: data)
-        case let .failure(error):
-            throw error
-        }
+        fatalError()
     }
 }
