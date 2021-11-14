@@ -11,8 +11,7 @@ protocol TopicViewControllerDelegate: AnyObject, HTTPClient {
 extension TopicViewController {
 
     static func instantiate(topic: Topic) -> Self {
-        let sb = UIStoryboard(name: "\(Self.self)", bundle: Bundle(for: Self.self))
-        let vc = sb.instantiateViewController(withIdentifier: "\(Self.self)") as! Self
+        let vc = instantiate()
         vc.topic = topic
         return vc
     }
